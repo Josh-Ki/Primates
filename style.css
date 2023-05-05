@@ -1,0 +1,198 @@
+
+* {
+    font-family: Arial, sans-serif;
+  }
+  
+  :root {
+    --primary-color: #f5a623; /* orange */
+    --secondary-color: #4a90e2; /* blue */
+    --tertiary-color: #ffffff; /* white */
+    --quaternary-color: #000000; /* black */
+  }
+  
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+  }
+  
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+
+
+  }
+  
+
+  .nav-link {
+    margin: 10px;
+  }
+  
+  /* Use an a tag to style the link text and add hover effects */
+  .nav-link a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-weight: bold;
+  }
+  
+  .nav-link a:hover {
+    color: var(--quaternary-color);
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-image: url("orangutan.jpg");
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+
+  .header h1 {
+    font-size: 60px;
+    color: var(--tertiary-color);
+  }
+  
+
+  .header p {
+    font-size: 24px;
+    color: var(--tertiary-color);
+  }
+  
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; 
+  }
+  
+
+  .section h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+  }
+  
+
+  .section ul {
+    list-style-type: disc; 
+  }
+  
+
+  .section li {
+    margin-left: 20px; 
+  }
+  
+
+  .section h3 {
+    font-size: 28px;
+  }
+  
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .footer ol {
+    list-style-type: decimal; 
+  }
+  
+
+  .footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+  .section {
+    opacity: 0; 
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+#threats {
+  background-color: #f9e0d9; 
+}
+
+#help {
+  background-color: #e0f9d9; 
+}
+
+#details {
+  background-color: #d9e0f9; 
+}
+
+#facts {
+  background-color: #f9d9e0; 
+}
+
+
+#threats h2 {
+  color: #d9534f; 
+}
+
+#help h2 {
+  color: #5cb85c; 
+}
+
+#details h2 {
+  color: #337ab7; 
+}
+
+#facts h2 {
+  color: #f0ad4e; 
+}
+
+
+.section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.section:hover {
+  transform: scale(1.05); 
+}
+
+
+.section {
+  transition: transform 0.3s ease-in-out; /* make the sections scale up and down with a duration of 0.3 seconds and an ease-in-out timing function */
+}
